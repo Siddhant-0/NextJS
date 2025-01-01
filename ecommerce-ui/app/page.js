@@ -9,8 +9,8 @@ const Home = () => {
     <div>
       <p className="text-3xl italic">
         Welcome {localStorage.getItem('firstName')}
-        {userRole === 'buyer' ? <BuyerList /> : <SellerList />}
       </p>
+      {userRole === 'buyer' ? <BuyerList /> : <SellerList />}
     </div>
   );
 };
